@@ -1,0 +1,22 @@
+# Core Manim dependencies
+manim>=0.18.0
+
+# Mathematical and scientific computing
+numpy>=1.21.0
+scipy>=1.7.0
+
+# Plotting and visualization
+matplotlib>=3.5.0
+
+# Additional dependencies for Manim Community Edition
+# (These are typically installed automatically with manim, but included for completeness)
+Pillow>=8.3.0
+pydub>=0.25.1
+rich>=12.0.0
+click>=8.0.0
+watchdog>=2.1.0
+manimpango>=0.4.0
+
+# Windows-specific dependencies (install separately if needed)
+# pycairo>=1.21.0  # Uncomment if needed
+# pango>=1.50.0    # Uncomment if needed
