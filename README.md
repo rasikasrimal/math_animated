@@ -26,8 +26,18 @@ git clone https://github.com/rasikasrimal/math_animated.git
 cd math_animated
 ```
 
-2. Install dependencies:
+2. **Quick Setup (Recommended)**: Run the setup script:
 ```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+3. **Manual Setup**: Install dependencies manually:
+```bash
+# Install system dependencies (Ubuntu/Debian)
+sudo apt-get install build-essential python3-dev libcairo2-dev libpango1.0-dev
+
+# Install Python dependencies
 pip install -r requirements.txt
 ```
 
@@ -36,6 +46,9 @@ pip install -r requirements.txt
 Use the main script to run animations:
 
 ```bash
+# Preview what animations do (no Manim required)
+python demo.py
+
 # List all available animations
 python main.py list
 
@@ -66,6 +79,9 @@ python main.py quadratic --quality high_quality
 ```
 math_animated/
 ├── main.py                          # Main runner script
+├── demo.py                          # Animation preview (no Manim required)
+├── setup.sh                         # Automated setup script
+├── test_project.py                  # Test suite for project validation
 ├── requirements.txt                 # Python dependencies
 ├── src/
 │   └── animations/
